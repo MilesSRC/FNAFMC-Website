@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Russo+One&display=swap');
+
+// Functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// Variables
+$primary: red;
+ 
+// Bootstrap Root
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Bootstrap Addons
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/dropdown";
+
+// Body
+body, html {
+    background: #1f1f1f;
+    color: white;
+}
+
+// Helpers from Utilities/api
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.centered-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centered-row {
+    display: flex;
+    justify-content: center;
+}
+
+//  Elemenet Specific
+.title {
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.brand-font {
+    font-family: "Russo One", sans-serif;
+}
+
+.people {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.people li {
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .people li h2 {
+        font-size: 100% !important;
+    }
+
+    .people li h3 {
+        font-size: 100% !important;
+    }
+
+    .people li {
+        margin-right: 10px;
+    }
+
+    .people li img {
+        width: 64px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .centered-row {
+        flex-direction: column;
+    }
+
+    .people {
+        flex-direction: column;
+    }
+
+    .people li img {
+        width: 100px;
+    }
+}

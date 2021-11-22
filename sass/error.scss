@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Russo+One&display=swap');
+
+// Functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// Variables
+$primary: red;
+ 
+// Bootstrap Root
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Bootstrap Addons
+@import "../node_modules/bootstrap/scss/buttons";
+
+$logo-font: 'Russo One', 'Roboto', sans-serif;
+$logo-font-weight: 400;
+
+$text-font: 'Roboto', sans-serif;
+$text-font-weight: 400;
+
+body, html {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    background-color: #1f1f1f;
+
+    background: url("/img/background-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+
+    font-family: $text-font;
+    font-weight: $text-font-weight;
+}

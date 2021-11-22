@@ -1,0 +1,23 @@
+{
+  "name": "fnafmc-web",
+  "version": "1.0.0",
+  "description": "FNAFMC's Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "production": "npm run build && node src/index.js",
+    "build": "sass sass/:public/css/ --style compressed",
+    "watch": "sass --watch sass/:public/css/"
+  },
+  "keywords": [],
+  "author": "MilesSRC",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "sass": "^1.43.4"
+  }
+}
